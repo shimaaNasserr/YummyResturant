@@ -1,0 +1,105 @@
+<html lang="en">
+    <head>
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Yummy</title>
+    </head>
+    <body>
+<div class="loading position-fixed top-0 bottom-0 start-0 end-0 justify-content-center align-items-center bg-black ">
+<li class="fa fa-spinner fa-spin fa-5x text-white"></li>
+</div>
+
+<div class="side-nav position-fixed d-flex top-0 bg-black vh-100  text-white ">
+<div class="nav-left d-flex flex-column justify-content-between p-4">
+  <div class="links">
+    <ul class="list list-unstyled">
+      <li onclick="showSearchHome() , closeNav() " class="position-relative">Search</li>
+      <li onclick="getCategories() , closeNav()" class="position-relative">Categories</li>
+      <li onclick="getArea() , closeNav()" class="position-relative">Area</li>
+      <li onclick="getIngredients() , closeNav()" class="position-relative">Ingredients</li>
+      <li onclick="showContact()" class="position-relative">Contact Us</li>
+    </ul>
+  </div>
+  <div class="nav-footer">
+    <div class="nav-icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-globe "></i>
+    </div>
+ <div class="footer">
+  <span>
+  Copyright Â© 2019 All Rights
+   <br> Reserved.</span>
+ </div>
+ </div>
+  </div>
+  <div class="nav-righ d-flex flex-column justify-content-between bg-white text-center text-black p-2">
+    <img src="images/logo.png" alt="" class="logo-image" >
+    <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+    <div class="">
+      <i class="fa-solid fa-globe d-block"></i>
+      <i class="fa-solid fa-share-nodes mt-2"></i>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row g-4" id="myRow">
+<div class="col-md-3"></div>
+  </div>
+</div>
+
+<!-- <div class="col-md-3">
+  <div class="">
+    <i class="fa-solid fa-house-laptop fa-4x"></i>
+    <h3></h3>
+  </div>
+</div> -->
+
+
+<!-- <div class="vh-100 position-relative">
+<div class="inner-loading top-0 bottom-0 start-0 end-0 justify-content-center align-items-center">
+  <li class="fa fa-spinner fa-spin fa-5x text-white"></li>
+  </div>
+</div>  -->
+
+<div class="container w-75" id="searchHome">
+</div>
+
+
+  <!-- <div class="row justify-content-center align-items-center">
+    <div class="col-md-6">
+      <input  type="text" class=" form-control text-black bg-white" placeholder="Enter Your Name">
+    </div>
+    <div class="col-md-6">
+      <input  type="text" class=" form-control text-black bg-white" placeholder="Enter Your Email">
+    </div>
+  </div> -->
+
+
+
+
+<!-- <div class="col-md-3">
+  <div class="text-center text-white">
+    <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+    <h3>${arr[i].strIngredient}</h3>
+    <p>${arr[i].strDescription}</p>
+  </div>
+</div> -->
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.3.min.js"></script>
+<!-- <script src="js/owl.carousel.min.js"></script> -->
+<script src="js/main.js"></script>
+
+
+    </body>
+</html>
