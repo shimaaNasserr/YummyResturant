@@ -70,6 +70,7 @@ async function getCategories() {
     let api = await fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`)
     response = await api.json()
     console.log(response.categories);
+    console.log();
     displayCategories(response.categories)
     $(".loading").fadeOut(300)
 }
@@ -311,7 +312,7 @@ function showContact(){
     <div class="col-md-6">
       <input id="passInput" type="password" onkeyup="allInputsValidation()" class=" form-control text-black bg-white" placeholder="Enter Your Password">
       <div id="passAlert" class="alert alert-danger w-100 mt-2 d-none">
-        Enter valid password *Minimum eight characters, at least one letter and one number:*  </div>
+        Enter valid password *Minimum eight characters,start with capital litter  </div>
     </div>
     <div class="col-md-6">
       <input id="rePassInput" type="password" onkeyup="allInputsValidation()" class=" form-control text-black bg-white" placeholder="Repassword">
@@ -319,7 +320,7 @@ function showContact(){
         Enter valid repassword
       </div>
     </div>
-    <button id="submitBtn" disabled class="btn btn-outline-danger  mt-3  text-center m-auto col-1">Submit</button>
+    <button id="submitBtn" disabled class="btn btn-danger text-white  mt-3  text-center m-auto col-3">Submit</button>
   </div>
   </div>
   </div>
@@ -436,7 +437,7 @@ function ageValidation(){
     return (/^(0?[1-9]|[1-9][0-9]|[1][1-9][1-9]|200)$/.test(document.getElementById("ageInput").value))
 }
 function passValidation(){
-    return (/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(document.getElementById("passInput").value))
+    return (/^[A-Z][a-zA-Z0-9!@#$%^&*()_-]{8,}$/.test(document.getElementById("passInput").value))
 }
 function repassValidation(){
     return document.getElementById("rePassInput").value == document.getElementById("passInput").value
